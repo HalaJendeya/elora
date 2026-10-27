@@ -1,0 +1,16 @@
+# Launcher icons from the brand monogram (see tool/icon/render_icon_test.dart).
+# Regenerate:  dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  android: "ic_launcher"
+  ios: true
+  remove_alpha_ios: true
+  background_color_ios: "#FAF6F0"
+  adaptive_icon_background: "#FAF6F0"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#FAF6F0"
+    theme_color: "#B76E79"
