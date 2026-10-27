@@ -1,0 +1,470 @@
+{
+ "me": {
+  "success": true,
+  "message": "تم بنجاح",
+  "data": {
+   "id": 900,
+   "name": "عميلة تجريبية",
+   "email": "test@example.com",
+   "phone": "0590000000",
+   "role": "customer",
+   "role_label": "عميل",
+   "avatar": null,
+   "initials": "ع",
+   "cohort": null,
+   "is_active": true,
+   "last_login_at": "2026-10-19T12:24:35+00:00",
+   "created_at": "2026-10-15T19:30:01+00:00",
+   "reliability": {
+    "score": 100,
+    "level": "excellent",
+    "label": "ملتزم جدًا",
+    "completed": 0,
+    "no_shows": 0,
+    "late_cancellations": 0,
+    "total": 2
+   }
+  }
+ },
+ "upcoming": {
+  "success": true,
+  "message": "تم بنجاح",
+  "data": [
+   {
+    "id": 901,
+    "number": "EL-TEST-0001",
+    "code": "TEST:CODE:000001",
+    "qr": "TEST:CODE:000001",
+    "status": "confirmed",
+    "status_label": "مؤكد",
+    "source": "app",
+    "source_label": "التطبيق",
+    "starts_at": "2026-10-20T10:30:00+03:00",
+    "ends_at": "2026-10-20T11:30:00+03:00",
+    "date": "2026-10-20",
+    "day_label": "الثلاثاء",
+    "time": "10:30",
+    "end_time": "11:30",
+    "duration_minutes": 60,
+    "minutes_until": 1143,
+    "service_id": 902,
+    "service_name": "خدمة تجريبية",
+    "service": {
+     "id": 903,
+     "name": "خدمة تجريبية",
+     "image": "https://example.test/img.webp",
+     "capacity": 1
+    },
+    "staff_id": 904,
+    "staff_name": "أخصائية تجريبية",
+    "staff": {
+     "id": 905,
+     "name": "أخصائية تجريبية",
+     "title": "خبيرة",
+     "avatar": null,
+     "initials": "ع",
+     "color": "#DB2777"
+    },
+    "price": 150,
+    "discount": 0,
+    "total": 150,
+    "currency": "ILS",
+    "currency_symbol": "₪",
+    "coupon_code": null,
+    "payment_method": "cash",
+    "payment_method_label": "الدفع في المنشأة",
+    "customer_name": "عميلة تجريبية",
+    "phone": "0590000000",
+    "notes": null,
+    "answers": {
+     "hair_length": "نص تجريبي",
+     "occasion": "نص تجريبي"
+    },
+    "answers_display": [
+     {
+      "key": "hair_length",
+      "label": "طول شعرك",
+      "type": "select",
+      "value": "طويل",
+      "display": "طويل",
+      "unit": null
+     },
+     {
+      "key": "occasion",
+      "label": "المناسبة",
+      "type": "select",
+      "value": "تخرج",
+      "display": "تخرج",
+      "unit": null
+     }
+    ],
+    "cancel_reason": null,
+    "cancelled_late": false,
+    "reschedule_count": 0,
+    "can_cancel": true,
+    "can_reschedule": true,
+    "cancel_is_late": false,
+    "can_review": false,
+    "review": null,
+    "timeline": [
+     {
+      "status": "confirmed",
+      "label": "مؤكد",
+      "done": true,
+      "at": "2026-10-19T08:34:05+00:00",
+      "note": null
+     },
+     {
+      "status": "arrived",
+      "label": "وصل",
+      "done": false,
+      "at": null,
+      "note": null
+     },
+     {
+      "status": "in_progress",
+      "label": "جارٍ الآن",
+      "done": false,
+      "at": null,
+      "note": null
+     },
+     {
+      "status": "completed",
+      "label": "مكتمل",
+      "done": false,
+      "at": null,
+      "note": null
+     }
+    ],
+    "place": {
+     "id": 906,
+     "name": "ÉLORA",
+     "slug": "elora",
+     "logo": "https://example.test/logo.webp",
+     "address": "عنوان تجريبي",
+     "phone": "0590000000"
+    },
+    "arrived_at": null,
+    "completed_at": null,
+    "cancelled_at": null,
+    "created_at": "2026-10-19T08:34:05+00:00"
+   }
+  ],
+  "meta": {
+   "page": 1,
+   "per_page": 15,
+   "total": 1,
+   "last_page": 1
+  }
+ },
+ "past": {
+  "success": true,
+  "message": "تم بنجاح",
+  "data": [
+   {
+    "id": 907,
+    "number": "EL-TEST-0001",
+    "code": "TEST:CODE:000001",
+    "qr": "TEST:CODE:000001",
+    "status": "cancelled",
+    "status_label": "ملغي",
+    "source": "app",
+    "source_label": "التطبيق",
+    "starts_at": "2026-10-21T13:00:00+03:00",
+    "ends_at": "2026-10-21T14:00:00+03:00",
+    "date": "2026-10-21",
+    "day_label": "الأربعاء",
+    "time": "13:00",
+    "end_time": "14:00",
+    "duration_minutes": 60,
+    "minutes_until": 2732,
+    "service_id": 908,
+    "service_name": "خدمة تجريبية",
+    "service": {
+     "id": 909,
+     "name": "خدمة تجريبية",
+     "image": "https://example.test/img.webp",
+     "capacity": 1
+    },
+    "staff_id": 910,
+    "staff_name": "أخصائية تجريبية",
+    "staff": {
+     "id": 911,
+     "name": "أخصائية تجريبية",
+     "title": "خبيرة",
+     "avatar": null,
+     "initials": "ع",
+     "color": "#DB2777"
+    },
+    "price": 150,
+    "discount": 0,
+    "total": 150,
+    "currency": "ILS",
+    "currency_symbol": "₪",
+    "coupon_code": null,
+    "payment_method": "cash",
+    "payment_method_label": "الدفع في المنشأة",
+    "customer_name": "عميلة تجريبية",
+    "phone": "0590000000",
+    "notes": null,
+    "answers": {
+     "hair_length": "نص تجريبي",
+     "occasion": "نص تجريبي"
+    },
+    "answers_display": [
+     {
+      "key": "hair_length",
+      "label": "طول شعرك",
+      "type": "select",
+      "value": "طويل",
+      "display": "طويل",
+      "unit": null
+     },
+     {
+      "key": "occasion",
+      "label": "المناسبة",
+      "type": "select",
+      "value": "يومي",
+      "display": "يومي",
+      "unit": null
+     }
+    ],
+    "cancel_reason": "سبب تجريبي",
+    "cancelled_late": false,
+    "reschedule_count": 1,
+    "can_cancel": false,
+    "can_reschedule": false,
+    "cancel_is_late": false,
+    "can_review": false,
+    "review": null,
+    "timeline": [
+     {
+      "status": "confirmed",
+      "label": "مؤكد",
+      "done": true,
+      "at": "2026-10-18T19:26:54+00:00",
+      "note": null
+     },
+     {
+      "status": "confirmed",
+      "label": "مؤكد",
+      "done": true,
+      "at": "2026-10-19T08:33:27+00:00",
+      "note": "نص تجريبي"
+     },
+     {
+      "status": "cancelled",
+      "label": "ملغي",
+      "done": true,
+      "at": "2026-10-19T12:11:32+00:00",
+      "note": "نص تجريبي"
+     }
+    ],
+    "place": {
+     "id": 912,
+     "name": "ÉLORA",
+     "slug": "elora",
+     "logo": "https://example.test/logo.webp",
+     "address": "عنوان تجريبي",
+     "phone": "0590000000"
+    },
+    "arrived_at": null,
+    "completed_at": null,
+    "cancelled_at": "2026-10-19T12:11:32+00:00",
+    "created_at": "2026-10-18T19:26:54+00:00"
+   },
+   {
+    "id": 913,
+    "number": "EL-TEST-0001",
+    "code": "TEST:CODE:000001",
+    "qr": "TEST:CODE:000001",
+    "status": "cancelled",
+    "status_label": "ملغي",
+    "source": "app",
+    "source_label": "التطبيق",
+    "starts_at": "2026-10-21T09:00:00+03:00",
+    "ends_at": "2026-10-21T10:00:00+03:00",
+    "date": "2026-10-21",
+    "day_label": "الأربعاء",
+    "time": "09:00",
+    "end_time": "10:00",
+    "duration_minutes": 60,
+    "minutes_until": 2492,
+    "service_id": 914,
+    "service_name": "خدمة تجريبية",
+    "service": {
+     "id": 915,
+     "name": "خدمة تجريبية",
+     "image": "https://example.test/img.webp",
+     "capacity": 1
+    },
+    "staff_id": 916,
+    "staff_name": "أخصائية تجريبية",
+    "staff": {
+     "id": 917,
+     "name": "أخصائية تجريبية",
+     "title": "خبيرة",
+     "avatar": null,
+     "initials": "ع",
+     "color": "#DB2777"
+    },
+    "price": 150,
+    "discount": 0,
+    "total": 150,
+    "currency": "ILS",
+    "currency_symbol": "₪",
+    "coupon_code": null,
+    "payment_method": "cash",
+    "payment_method_label": "الدفع في المنشأة",
+    "customer_name": "عميلة تجريبية",
+    "phone": "0590000000",
+    "notes": null,
+    "answers": {
+     "hair_length": "نص تجريبي",
+     "occasion": "نص تجريبي"
+    },
+    "answers_display": [
+     {
+      "key": "hair_length",
+      "label": "طول شعرك",
+      "type": "select",
+      "value": "طويل",
+      "display": "طويل",
+      "unit": null
+     },
+     {
+      "key": "occasion",
+      "label": "المناسبة",
+      "type": "select",
+      "value": "خطوبة",
+      "display": "خطوبة",
+      "unit": null
+     }
+    ],
+    "cancel_reason": "سبب تجريبي",
+    "cancelled_late": false,
+    "reschedule_count": 0,
+    "can_cancel": false,
+    "can_reschedule": false,
+    "cancel_is_late": false,
+    "can_review": false,
+    "review": null,
+    "timeline": [
+     {
+      "status": "confirmed",
+      "label": "مؤكد",
+      "done": true,
+      "at": "2026-10-18T19:31:20+00:00",
+      "note": null
+     },
+     {
+      "status": "cancelled",
+      "label": "ملغي",
+      "done": true,
+      "at": "2026-10-19T12:11:44+00:00",
+      "note": "نص تجريبي"
+     }
+    ],
+    "place": {
+     "id": 918,
+     "name": "ÉLORA",
+     "slug": "elora",
+     "logo": "https://example.test/logo.webp",
+     "address": "عنوان تجريبي",
+     "phone": "0590000000"
+    },
+    "arrived_at": null,
+    "completed_at": null,
+    "cancelled_at": "2026-10-19T12:11:44+00:00",
+    "created_at": "2026-10-18T19:31:20+00:00"
+   }
+  ],
+  "meta": {
+   "page": 1,
+   "per_page": 15,
+   "total": 2,
+   "last_page": 1
+  }
+ },
+ "notifications": {
+  "success": true,
+  "message": "تم بنجاح",
+  "data": [],
+  "meta": {
+   "page": 1,
+   "per_page": 20,
+   "total": 0,
+   "last_page": 1,
+   "unread": 0
+  }
+ },
+ "waitlist_join": {
+  "id": 950,
+  "status": "waiting",
+  "status_label": "ينتظر",
+  "date": "2026-10-19",
+  "from_time": "16:00",
+  "to_time": "20:00",
+  "notes": null,
+  "service": {
+   "id": 38,
+   "name": "خدمة تجريبية"
+  },
+  "staff": null,
+  "offer": null,
+  "can_claim": false,
+  "booking_id": null,
+  "created_at": "2026-10-19T13:17:36+00:00"
+ },
+ "waitlist_after_leave": {
+  "id": 950,
+  "status": "cancelled",
+  "status_label": "ألغى",
+  "date": "2026-10-19",
+  "from_time": "16:00",
+  "to_time": "20:00",
+  "notes": null,
+  "service": {
+   "id": 38,
+   "name": "خدمة تجريبية"
+  },
+  "staff": null,
+  "offer": null,
+  "can_claim": false,
+  "booking_id": null,
+  "created_at": "2026-10-19T13:17:36+00:00"
+ },
+ "coupon_invalid": {
+  "success": false,
+  "message": "رمز الكوبون غير صالح",
+  "status": 422,
+  "error": {
+   "code": "COUPON_INVALID",
+   "details": {}
+  }
+ },
+ "read_all": {
+  "success": true,
+  "message": "تم بنجاح",
+  "data": {
+   "unread": 0
+  }
+ },
+ "profile_put": {
+  "success": true,
+  "data": {
+   "id": 900,
+   "name": "عميلة تجريبية",
+   "email": "test@example.com",
+   "phone": "0590000000",
+   "role": "customer",
+   "role_label": "عميل",
+   "avatar": null,
+   "initials": "ع",
+   "cohort": null,
+   "is_active": true,
+   "last_login_at": "2026-10-19T12:24:35+00:00",
+   "created_at": "2026-10-15T19:30:01+00:00"
+  }
+ }
+}
