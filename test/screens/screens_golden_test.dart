@@ -171,7 +171,10 @@ Future<void> _loadFonts() async {
     'IBMPlexSansArabic-Bold.ttf',
   ]);
   await family('Amiri', ['Amiri-Regular.ttf', 'Amiri-Bold.ttf']);
-  await family('Georgia', ['georgia.ttf', 'georgiab.ttf', 'georgiai.ttf']);
+  await family('Gelasio', [
+    'Gelasio-Variable.ttf',
+    'Gelasio-Italic-Variable.ttf',
+  ]);
   // Material icons for chevrons, stars, etc.
   final icons = File(
     '${Platform.environment['FLUTTER_ROOT'] ?? 'C:/flutter'}/bin/cache/artifacts/material_fonts/MaterialIcons-Regular.otf',

@@ -99,15 +99,11 @@ flutter:
         - asset: assets/fonts/Amiri-Regular.ttf
         - asset: assets/fonts/Amiri-Bold.ttf
           weight: 700
-    - family: Georgia
+    # Gelasio (SIL OFL), metric-compatible replacement for Georgia.
+    - family: Gelasio
       fonts:
-        - asset: assets/fonts/georgia.ttf
-        - asset: assets/fonts/georgiab.ttf
-          weight: 700
-        - asset: assets/fonts/georgiai.ttf
-          style: italic
-        - asset: assets/fonts/georgiaz.ttf
-          weight: 700
+        - asset: assets/fonts/Gelasio-Variable.ttf
+        - asset: assets/fonts/Gelasio-Italic-Variable.ttf
           style: italic
 
   #

@@ -1,5 +1,5 @@
 // Renders the launcher icon artwork from the brand monogram (Figma 11.01:
-// Georgia "É"). Run with:  flutter test tool/icon/render_icon_test.dart
+// Georgia "É", rendered with metric-compatible Gelasio). Run with:  flutter test tool/icon/render_icon_test.dart
 // Outputs assets/icon/app_icon.png (full icon) and
 // assets/icon/app_icon_foreground.png (Android adaptive foreground).
 import 'dart:io';
@@ -15,23 +15,31 @@ const _rose = Color(0xFFB76E79);
 const _roseDeep = Color(0xFF985663);
 const _size = 1024.0;
 
+/// Gelasio draws the glyph high in its line box, so the block is nudged down
+/// and the rule pulled up to keep the mark optically centred.
 Widget _mark({required double scale}) => Center(
-  child: Column(
-    mainAxisSize: MainAxisSize.min,
-    children: [
-      Text(
-        'É',
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-          fontFamily: 'Georgia',
-          fontSize: 560 * scale,
-          height: 1,
-          color: _roseDeep,
+  child: Transform.translate(
+    offset: Offset(0, 50 * scale),
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'É',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+            fontFamily: 'Gelasio',
+            fontSize: 560 * scale,
+            height: 1,
+            color: _roseDeep,
+          ),
         ),
-      ),
-      SizedBox(height: 18 * scale),
-      Container(width: 150 * scale, height: 8 * scale, color: _rose),
-    ],
+        SizedBox(height: 18 * scale),
+        Transform.translate(
+          offset: Offset(0, -105 * scale),
+          child: Container(width: 150 * scale, height: 8 * scale, color: _rose),
+        ),
+      ],
+    ),
   ),
 );
 
@@ -65,11 +73,11 @@ void main() {
     tester.view.physicalSize = const Size(_size, _size);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
-    final loader = FontLoader('Georgia')
+    final loader = FontLoader('Gelasio')
       ..addFont(
         Future.value(
           ByteData.sublistView(
-            File('assets/fonts/georgia.ttf').readAsBytesSync(),
+            File('assets/fonts/Gelasio-Variable.ttf').readAsBytesSync(),
           ),
         ),
       );

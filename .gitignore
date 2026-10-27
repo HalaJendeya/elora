@@ -48,5 +48,5 @@ app.*.map.json
 .claude/
 
 # Microsoft Georgia is a commercial font and must not be redistributed.
-# Supply your own licensed copy locally (see README).
+# The app uses Gelasio instead (see README).
 assets/fonts/georgia*.ttf

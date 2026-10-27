@@ -13,7 +13,7 @@ Both defines are optional (those are the defaults).
 - Tests: `flutter test` (screen captures: `flutter test --update-goldens test/screens`)
 
 ## Fonts
-IBM Plex Sans Arabic and Amiri (SIL Open Font License) are included under `assets/fonts/`.
-The Latin wordmark/monogram uses **Georgia**, a commercial Microsoft font that is **not** in this
-repository. Before building, place your own licensed copies in `assets/fonts/`:
-`georgia.ttf`, `georgiab.ttf`, `georgiai.ttf`, `georgiaz.ttf`.
+All bundled fonts are under the SIL Open Font License: IBM Plex Sans Arabic, Amiri, and
+**Gelasio** (`assets/fonts/Gelasio-OFL.txt`). The Figma design specifies Georgia for the Latin
+wordmark/monogram; Georgia is a commercial Microsoft font, so the app uses Gelasio, which is
+designed to be metric-compatible with it. The repository builds as-is.

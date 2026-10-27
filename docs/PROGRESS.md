@@ -125,7 +125,7 @@ only navigates through the allowlist (waitlist offers → waitlist entry).
   Tests: 100 passing. **Not yet confirmed on the device.**
 
 ## 2026-10-27 launcher icon + release APK
-- Icon: brand monogram "É" (Georgia, rose `#985663` + rose rule on cream `#FAF6F0`), from the
+- Icon: brand monogram "É" (Gelasio, standing in for Georgia; rose `#985663` + rose rule on cream `#FAF6F0`), from the
   Figma 11.01 "App" mark. Source art is rendered by `tool/icon/render_icon_test.dart` into
   `assets/icon/`; platform icons come from `flutter_launcher_icons.yaml` (Android all densities +
   adaptive, iOS, web). Regenerate: `flutter test tool/icon/render_icon_test.dart` then
@@ -144,6 +144,14 @@ only navigates through the allowlist (waitlist offers → waitlist entry).
   ```
   Keep the keystore and passwords backed up; Play updates need the same key.
 - Still `applicationId com.example.elora`; Google Play rejects `com.example.*`; pick the final ID before the first upload.
+
+## 2026-10-27 font licensing: Georgia → Gelasio
+- Georgia (Microsoft, commercial) is no longer bundled. The Latin wordmark/monogram uses **Gelasio**
+  (SIL OFL, `assets/fonts/Gelasio-OFL.txt`), designed to be metric-compatible with Georgia, so
+  layouts are unchanged. All bundled fonts are now open-licensed; the repo builds as-is.
+- Variable font files (400–700 + italic); the app only uses the regular and italic instances.
+- Launcher icon re-rendered with Gelasio (mark re-centred: Gelasio sits higher in its line box);
+  screen captures regenerated.
 
 ## Blockers / next steps
 1. **Test account needed** for slug `elora` (or a staging slug) to verify protected reads and writes live.

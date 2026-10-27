@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'app_colors.dart';
 
-/// Type scale. Display sizes follow Figma (Amiri / Georgia). Body sizes are
+/// Type scale. Display sizes follow Figma (Amiri / Georgia; Georgia is
+/// rendered with Gelasio, an open-licensed metric-compatible equivalent). Body sizes are
 /// raised from Figma's 7–11 px to a readable 11–15 px scale (see
 /// docs/API_INVENTORY.md → Discrepancies).
 class AppText {
@@ -10,7 +11,7 @@ class AppText {
 
   static const sans = 'IBMPlexSansArabic';
   static const serif = 'Amiri';
-  static const latin = 'Georgia';
+  static const latin = 'Gelasio';
 
   static const wordmark = TextStyle(
     fontFamily: latin,
